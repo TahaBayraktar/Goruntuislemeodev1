@@ -6,7 +6,6 @@ from numpy import zeros
 
 foto=cv2.imread("deneme.jpeg", 0)
 hist=zeros(256)
-print(foto.shape)
 [w,h]=foto.shape
 for v in range(0,h):
     for u in range(0,w):
