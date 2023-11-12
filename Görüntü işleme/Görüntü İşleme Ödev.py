@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 from numpy import zeros
 
-foto=cv2.imread("../deneme.jpeg", 0)
+foto=cv2.imread("deneme.jpeg", 0)
 hist=zeros(256)
 print(foto.shape)
 [w,h]=foto.shape
@@ -14,3 +14,4 @@ for v in range(0,h):
         hist[i]+=1
 plt.plot(hist)
 plt.show()
+
